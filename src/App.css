@@ -194,14 +194,19 @@ img {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
 }
-
+.paginate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .btn {
   display: inline-block;
   background: var(--light-color);
-  color: #333;
+  color: rgb(49, 48, 48);
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
   border: none;
+  border-radius: 3px;
   cursor: pointer;
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
@@ -355,6 +360,7 @@ table th {
   width: 100%;
   opacity: 0.9;
   margin-bottom: 1rem;
+  background-color: rgb(59, 122, 163);
 }
 .navbar ul {
   display: flex;
