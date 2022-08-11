@@ -64,7 +64,7 @@ function App() {
         {!selectedPokemon ? (
 
           <div className='paginatedpkmns'>
-          <h3>Please select a pokemon</h3>
+          <h3>Please select a Pokemon</h3>
           <Pokemons pokemons={pokemons}/>
           <Pagination 
             gotoNext={nextPage ? gotoNext : null}
