@@ -3,9 +3,9 @@ import '../../App.css';
 
 function Pagination({ gotoNext, gotoPrev}) {
   return (
-    <div className='paginate'>
-        {gotoPrev && <button className='btn' onClick={gotoPrev}>Previous</button>}
-        {gotoNext && <button className='btn' onClick={gotoNext}>Next</button>}
+    <div id='pagination' className='paginate'>
+        {gotoPrev && <button id='previous' className='btn' onClick={gotoPrev}>Previous</button>}
+        {gotoNext && <button id='next' className='btn' onClick={gotoNext}>Next</button>}
     </div>
   );
 }

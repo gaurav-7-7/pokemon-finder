@@ -52,7 +52,7 @@ function App() {
     
   return (
     <div className='app'>
-      <div className='navbar'> 
+      <div id='search' className='navbar'> 
         <h1>POKEMON FINDER</h1>
         <input type='text' onChange = {(e) => {
           setSelectedPokemon(false);
@@ -66,7 +66,7 @@ function App() {
           <div className='paginatedpkmns'>
           <h3>Please select a Pokemon</h3>
           <Pokemons pokemons={pokemons}/>
-          <Pagination 
+          <Pagination
             gotoNext={nextPage ? gotoNext : null}
             gotoPrev={prevPage ? gotoPrev : null}
           />
