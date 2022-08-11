@@ -74,14 +74,6 @@ function App() {
 
         ) : (<PokemonItem pokemon={searchName} />)} 
       </div>
-      {/* <div className='paginatedpkmns'>
-        <h3>Please select a pokemon</h3>
-        <Pokemons pokemons={pokemons}/>
-        <Pagination 
-          gotoNext={nextPage ? gotoNext : null}
-          gotoPrev={prevPage ? gotoPrev : null}
-        />
-      </div> */}
     </div>
   )
 }
