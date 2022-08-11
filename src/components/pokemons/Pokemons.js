@@ -20,6 +20,6 @@ const userStyle = {
   display : 'grid',
   gridTemplateColumns : 'repeat(3, 1fr)',
   gridGap : '1rem',
-  padding: '0.5rem'
+  padding: '0.5rem',
 }
 export default Pokemons;

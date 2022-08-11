@@ -22,6 +22,32 @@ body {
   background-color: #fff;
   color: #333;
 }
+
+.navbar input {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #419b8c;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.navbar button,.btn {
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  padding-left: 10px;
+  color: white;
+  background-color: rgb(78, 78, 150);
+}
+
+.navbar button:hover {
+  cursor: pointer;
+}
+
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -113,6 +139,15 @@ img {
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
+  min-width: 203px;
+  max-height: 346px;
+  margin: auto;
+  width: 50%;
+}
+
+.card img {
+  max-height: 169px;
+  max-width: 169px;
 }
 
 /* List */
@@ -199,7 +234,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-.btn {
+/* .btn {
   display: inline-block;
   background: var(--light-color);
   color: rgb(49, 48, 48);
@@ -211,7 +246,7 @@ img {
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
-}
+} */
 
 .btn-link {
   background: none;
@@ -322,7 +357,7 @@ input {
   color: #888;
 }
 
-input[type='text'],
+/* input[type='text'],
 input[type='email'],
 input[type='password'],
 input[type='date'],
@@ -333,7 +368,7 @@ textarea {
   padding: 0.4rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
-}
+} */
 
 input[type='submit'],
 button {
@@ -353,14 +388,16 @@ table th {
 /* Navbar */
 .navbar {
   display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
   padding: 0.7rem 2rem;
   z-index: 1;
   width: 100%;
-  opacity: 0.9;
   margin-bottom: 1rem;
-  background-color: rgb(59, 122, 163);
+  background-color:#459cac;
+;
 }
 .navbar ul {
   display: flex;
@@ -403,12 +440,6 @@ table th {
 
   .lead {
     font-size: 1rem;
-  }
-
-  /* Navbar */
-  .navbar {
-    display: block;
-    text-align: center;
   }
 
   .navbar ul {
