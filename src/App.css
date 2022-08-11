@@ -65,6 +65,13 @@ img {
   width: 100%;
 }
 
+.searchedpkmns {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
 /* Utilities */
 .container {
   max-width: 1100px;
