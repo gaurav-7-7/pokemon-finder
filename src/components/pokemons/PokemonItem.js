@@ -13,6 +13,7 @@ function PokemonItem({pokemon: name }){
     attack: "",
     defense: "",
     type1: "",
+    type2: ""
   });
 
   axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`)
@@ -26,7 +27,7 @@ function PokemonItem({pokemon: name }){
           attack: res.data.stats[1].base_stat,
           defense: res.data.stats[2].base_stat,
           type1: res.data.types[0].type.name,
-          // type2: res.data.types[1].type.name
+          type2: res.data.types[1]?.type.name
         }
       );
   });
@@ -40,6 +41,7 @@ function PokemonItem({pokemon: name }){
       <h5>Attack: {pokemonInfo.attack}</h5>
       <h5>Defense: {pokemonInfo.defense}</h5>
       <h5>Type1: {pokemonInfo.type1}</h5>
+      { pokemonInfo.type2?<h5>Type2: {pokemonInfo.type2}</h5>:null }
     </div>
   );
 };

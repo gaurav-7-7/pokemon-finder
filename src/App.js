@@ -54,20 +54,34 @@ function App() {
     <div className='app'>
       <div className='navbar'> 
         <h1>POKEMON FINDER</h1>
-        <input type='text' onChange = {(e) => {setSearchName(e.target.value)}}/>
+        <input type='text' onChange = {(e) => {
+          setSelectedPokemon(false);
+          setSearchName(e.target.value)
+          }}/>
         <button onClick={searchPokemon}>Search</button>
       </div>
       <div className='searchedpkmns'>
-        {!selectedPokemon ? (<h3>Please select a pokemon</h3>) : (<PokemonItem pokemon={searchName} />)} 
+        {!selectedPokemon ? (
+
+          <div className='paginatedpkmns'>
+          <h3>Please select a pokemon</h3>
+          <Pokemons pokemons={pokemons}/>
+          <Pagination 
+            gotoNext={nextPage ? gotoNext : null}
+            gotoPrev={prevPage ? gotoPrev : null}
+          />
+          </div>
+
+        ) : (<PokemonItem pokemon={searchName} />)} 
       </div>
-      <div className='paginatedpkmns'>
+      {/* <div className='paginatedpkmns'>
+        <h3>Please select a pokemon</h3>
         <Pokemons pokemons={pokemons}/>
         <Pagination 
           gotoNext={nextPage ? gotoNext : null}
           gotoPrev={prevPage ? gotoPrev : null}
         />
-      </div>
-      
+      </div> */}
     </div>
   )
 }
