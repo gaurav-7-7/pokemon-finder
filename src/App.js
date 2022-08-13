@@ -83,6 +83,7 @@ function App() {
           <h3>Please select a Pokemon</h3>
           <Pokemons pokemons={currentPokemons}/>
           <Pagination
+            id='pagination'
             pageNo={pageNo}
             nPages={nPages}
             gotoNext={nextPage ? gotoNext : null}
