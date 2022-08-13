@@ -10,7 +10,7 @@ import PokemonItem from './components/pokemons/PokemonItem';
 function App() {
   const [pokemons, setPokemons] = useState([]);
   const [pageUrl, setPageUrl] = useState ("https://pokeapi.co/api/v2/pokemon/" );
-  const homePage = 'https://vercel.com/gaurav-7-7/pokemon-finder';
+  const homePage = 'https://pokemon-finder-bice.vercel.app/';
   const [searchName, setSearchName] = useState ([]);
   const [selectedPokemon, setSelectedPokemon] = useState(false);
 
