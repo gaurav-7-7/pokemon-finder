@@ -41,7 +41,7 @@ function PokemonItem({pokemon: name }){
       <h5>Attack: {pokemonInfo.attack}</h5>
       <h5>Defense: {pokemonInfo.defense}</h5>
       <h5>Type1: {pokemonInfo.type1}</h5>
-      { pokemonInfo.type2?<h5>Type2: {pokemonInfo.type2}</h5>:null }
+      { pokemonInfo.type2?(<h5>Type2: {pokemonInfo.type2}</h5>) : (<h5>Type2: </h5>) }
     </div>
   );
 };

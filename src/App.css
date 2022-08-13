@@ -243,7 +243,7 @@ img {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
 }
-.paginate {
+.paginate, .paginate-n {
   display: flex;
   justify-content: center;
   align-items: center;
