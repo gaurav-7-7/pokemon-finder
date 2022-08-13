@@ -35,7 +35,7 @@ function PokemonItem({pokemon: name }){
   return (
     <div className="card text-center"> 
       <img src={pokemonInfo.img} alt='Pokemon'/>
-      <h3 id='name'>{pokemonInfo.name}</h3>
+      <span id="name" className='h-3'>{pokemonInfo.name}</span>
       <h5>Species: {pokemonInfo.species}</h5>
       <h5>HP: {pokemonInfo.hp}</h5>
       <h5>Attack: {pokemonInfo.attack}</h5>

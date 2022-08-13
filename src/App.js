@@ -10,6 +10,7 @@ import PokemonItem from './components/pokemons/PokemonItem';
 function App() {
   const [pokemons, setPokemons] = useState([]);
   const [pageUrl, setPageUrl] = useState ("https://pokeapi.co/api/v2/pokemon/" );
+  const homePage = 'https://vercel.com/gaurav-7-7/pokemon-finder';
   const [searchName, setSearchName] = useState ([]);
   const [selectedPokemon, setSelectedPokemon] = useState(false);
 
@@ -69,11 +70,11 @@ function App() {
 
   return (
     <div className='app'>
-      <div id='search' className='navbar'> 
-        <h1>POKEMON FINDER</h1>
+      <div id="search" className='navbar'> 
+        <h1><a href={homePage}>POKEMON FINDER</a></h1>
         <input type='text' onChange = {(e) => {
           setSelectedPokemon(false);
-          setSearchName(e.target.value)
+          setSearchName(e.target.value.toLowerCase())
           }}/>
         <button onClick={searchPokemon}>Search</button>
       </div>
@@ -83,7 +84,7 @@ function App() {
           <h3>Please select a Pokemon</h3>
           <Pokemons pokemons={currentPokemons}/>
           <Pagination
-            id='pagination'
+            id="pagination"
             pageNo={pageNo}
             nPages={nPages}
             gotoNext={nextPage ? gotoNext : null}

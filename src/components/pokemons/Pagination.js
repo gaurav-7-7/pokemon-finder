@@ -10,8 +10,8 @@ function Pagination({ gotoNext, gotoPrev, pageNo, nPages}) {
         <h4>Page {pageNo} of {pageNumbers.length}</h4>
       </div>
       <div id='pagination' className='paginate'>
-          {gotoPrev && <button id='previous' className='btn' onClick={gotoPrev}>Previous</button>}
-          {gotoNext && <button id='next' className='btn' onClick={gotoNext}>Next</button>}
+          {gotoPrev && <button id="previous" className='btn' onClick={gotoPrev}>Previous</button>}
+          {gotoNext && <button id="next" className='btn' onClick={gotoNext}>Next</button>}
       </div>
     </>
   );
